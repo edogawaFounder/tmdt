@@ -7,7 +7,7 @@
        $diachi = $_POST['diachi'];
        $sdt = $_POST['sdt'];
        $total_money = $_SESSION['tonghoadon'][0];
-        $sql= "INSERT INTO `tbl_order`(`id_customer`, `ten_kh`, `ngay_dat`, `address`, `phone`, `status`, `notes`, `total_money`) VALUES ('$id_customer','$name',".time().",'$diachi','$sdt','0','NULL','$total_money')";
+        $sql= "INSERT INTO `tbl_order`(`id_customer`, `ten_kh`, `address`, `phone`, `status`, `notes`, `total_money`) VALUES ('$id_customer','$name','$diachi','$sdt','0','NULL','$total_money')";
        $result=$connect->query($sql);
         if($result){
         $sql1="SELECT id_order FROM tbl_order ORDER BY id_order DESC";

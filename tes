@@ -1,0 +1,2 @@
+SELECT ngay_dat,SUM(total_money) FROM `tbl_order` WHERE ngay_dat >= LAST_DAY(CURRENT_DATE) + INTERVAL 1 DAY - INTERVAL 1 MONTH
+  AND ngay_dat< LAST_DAY(CURRENT_DATE) + INTERVAL 1 DAY GROUP BY ngay_dat 

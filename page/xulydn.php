@@ -37,15 +37,15 @@ session_start();
                     }
                 }
                 else{
-                    echo "0";
+                    echo "Tài khoản đã bị khóa";
                 }
             }
             else{
-                echo "3";
+                echo "Đăng nhập không thành công";
             }
         }
         else{    
-            echo "3";
+            echo "Đăng nhập không thành công";
         }
     }
 
